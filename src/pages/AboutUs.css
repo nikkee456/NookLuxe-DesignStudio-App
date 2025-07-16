@@ -165,3 +165,107 @@
   margin-top: 1rem;
   font-size: 1.2rem;
 }
+/* ---------------- Responsive Styles ---------------- */
+
+@media (max-width: 1024px) {
+  .stats {
+    flex-wrap: wrap;
+  }
+
+  .service-gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .card img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats .stat-card {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+
+  .concept h2,
+  .services h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .concept,
+  .services {
+    padding: 2rem 1rem;
+  }
+}
+

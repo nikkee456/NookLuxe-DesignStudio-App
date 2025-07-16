@@ -64,4 +64,39 @@ body {
   .section-content a:hover {
     color: #dd98a8;
   }
-  
+@media (max-width: 768px) {
+  .our-reach-container {
+    padding: 20px;
+  }
+
+  .section {
+    flex-direction: column !important; /* overrides row-reverse for even items */
+    margin-bottom: 20px;
+  }
+
+  .section-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .section-content {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .section-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-content p {
+    font-size: 1rem;
+  }
+
+  .section-content a {
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+  }
+}

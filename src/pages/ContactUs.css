@@ -125,29 +125,36 @@ button:hover {
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
+    padding: 15px;
     gap: 20px;
   }
 
   .contact-info,
   .contact-form {
+    width: 100%;
+    flex: none;
     border-radius: 10px;
-  }
-
-  .contact-info {
-    flex: none;
-  }
-
-  .contact-form {
-    flex: none;
-    width: 100%; 
+    padding: 15px;
+    box-sizing: border-box;
   }
 
   .form-group {
     flex-direction: column;
+    gap: 0;
+  }
+
+  .input-box {
+    width: 100%;
+    margin-bottom: 15px;
   }
 
   .input-box input,
   .input-box textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  button {
     width: 100%;
   }
 }
@@ -158,21 +165,45 @@ button:hover {
   }
 
   .contact-header p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    padding: 0 10px;
   }
 
-  .form-group {
-    flex-direction: column;
+  .contact-info h2 {
+    font-size: 1.3rem;
   }
 
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  .contact-info .info p {
+    font-size: 0.95rem;
+    word-break: break-word;
+  }
+
+  .contact-info .social-icons i {
+    font-size: 1.4rem;
+  }
+
+  .contact-form h1,
+  .contact-form p {
+    text-align: center;
+  }
+
+  .input-box label {
+    font-size: 0.95rem;
+  }
+
+  .input-box input,
+  .input-box textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .contact-container {
+    overflow-x: hidden;
   }
 }
